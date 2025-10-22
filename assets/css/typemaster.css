@@ -222,22 +222,23 @@ footer span {
   .container {
     max-width: 768px;
   }
-/* Hero */
+
+  /* Hero */
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
   }
 
-  .hero-content{
+  .hero-content {
     margin-top: 60px;
   }
 
-  .hero-p{
+  .hero-p {
     margin-bottom: 39px;
   }
-  
-  .hero-btn-content{
+
+  .hero-btn-content {
     gap: 37px;
   }
 
@@ -247,73 +248,180 @@ footer span {
     line-height: 48px;
   }
 
-  .hero-img-mobile{
+  .hero-img-mobile {
     display: none;
   }
 
-  .hero-img-tablet{
+  .hero-img-tablet {
     display: block;
     margin-left: 83px;
 
   }
-/* Hero End */
-  
-/* Keyboard */
 
-.keyboard-section{
-  margin-left: 39px;
-  gap: 30px;
+  /* Hero End */
+
+  /* Keyboard */
+
+  .keyboard-section {
+    margin-left: 39px;
+    gap: 30px;
+  }
+
+  .orange-keyboard-mobile {
+    display: none;
+  }
+
+  .orange-keyboard-tablet {
+    display: block;
+  }
+
+  .pc-parts-mobile {
+    display: none;
+  }
+
+  .pc-parts-tablet {
+    display: block;
+  }
+
+  .keyboard-content {
+    display: flex;
+    margin-inline: 40px;
+    margin-bottom: 111px;
+  }
+
+  .keyboard-content h3 {
+    text-align: start;
+    margin-right: 80px;
+  }
+
+  .keyboard-content p {
+    text-align: start;
+  }
+
+  /* Keyboard End */
+
+  /* Card */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 34px;
+    gap: 69px;
+    margin-bottom: 142px;
+  }
+
+  .card {
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    max-width: 631px;
+  }
+
+  .cards h4 {
+    text-align: start;
+  }
 }
- .orange-keyboard-mobile{
-  display: none;
- }
 
- .orange-keyboard-tablet{
-  display: block;
- }
-
- .pc-parts-mobile{
-  display: none;
- }
-
- .pc-parts-tablet{
-  display: block;
- }
-
- .keyboard-content{
-  display: flex;
-  margin-inline: 40px;
-  margin-bottom: 111px;
- }
-
- .keyboard-content h3{
-  text-align: start;
-  margin-right: 80px;
- }
-
- .keyboard-content p{
-  text-align: start;
- }
- /* Keyboard End */
-
- /* Card */
- .cards{
-  display: grid;
-  grid-template-columns: repeat(2 ,1fr);
-  padding-left: 34px;
-  gap: 69px;
-  margin-bottom: 142px;
- }
-
- .card{
-  align-items: start;
-  justify-content: start;
-  text-align: start;
-  max-width: 631px;
- }
-
- .cards h4{
-  text-align: start;
- }
-}
 /* Tablet End */
+
+/* Desktop */
+@media (width >=1024px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-inline: 165px;
+  }
+
+  /* Header */
+  .header {
+    margin-bottom: 83px;
+  }
+
+  /* Header End */
+
+  /* Hero */
+  .hero {
+    margin-bottom: 30px;
+  }
+
+
+  .hero-content {
+    max-width: 445px;
+    margin-right: 125px;
+  }
+
+  .hero-btn-content {
+    align-items: center;
+  }
+
+  .hero-img-tablet {
+    display: none;
+  }
+
+  .hero-img-desktop {
+    display: block;
+    margin-left: 10px;
+  }
+
+  /* Hero End */
+
+
+  /* Keyboard Section */
+  .keyboard {
+    margin-inline: 165px;
+    margin-bottom: 168px;
+  }
+
+  .keyboard-section {
+    margin: 0;
+
+  }
+
+  .orange-keyboard-tablet {
+    display: none;
+  }
+
+  .orange-keyboard-desktop {
+    display: block;
+  }
+
+  .pc-parts-tablet {
+    display: none;
+  }
+
+  .pc-parts-desktop {
+    display: block;
+  }
+
+  .keyboard-content {
+    margin: 0;
+    margin-left: 95px;
+    max-width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .keyboard-content h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  .keyboard-content p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Keyboard Section End */
+
+  /* Cards Section */
+  .cards{
+    padding: 0;
+    gap: 30px;
+    margin-inline: 165px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Cards End */
+}
