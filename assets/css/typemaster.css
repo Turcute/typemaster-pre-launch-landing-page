@@ -102,6 +102,10 @@ header a {
   display: none;
 }
 
+.hero-img-tablet {
+  display: none;
+}
+
 .hero-img-mobile {
   margin-bottom: 24px;
 }
@@ -210,9 +214,106 @@ footer span {
   line-height: 26px;
   letter-spacing: 0px;
 }
+
 /* Footer End */
 
 /* Tablet */
-@media (width > 768px) {
-  .card
+@media (width >=768px) {
+  .container {
+    max-width: 768px;
+  }
+/* Hero */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
+
+  .hero-content{
+    margin-top: 60px;
+  }
+
+  .hero-p{
+    margin-bottom: 39px;
+  }
+  
+  .hero-btn-content{
+    gap: 37px;
+  }
+
+  .hero h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .hero-img-mobile{
+    display: none;
+  }
+
+  .hero-img-tablet{
+    display: block;
+    margin-left: 83px;
+
+  }
+/* Hero End */
+  
+/* Keyboard */
+
+.keyboard-section{
+  margin-left: 39px;
+  gap: 30px;
 }
+ .orange-keyboard-mobile{
+  display: none;
+ }
+
+ .orange-keyboard-tablet{
+  display: block;
+ }
+
+ .pc-parts-mobile{
+  display: none;
+ }
+
+ .pc-parts-tablet{
+  display: block;
+ }
+
+ .keyboard-content{
+  display: flex;
+  margin-inline: 40px;
+  margin-bottom: 111px;
+ }
+
+ .keyboard-content h3{
+  text-align: start;
+  margin-right: 80px;
+ }
+
+ .keyboard-content p{
+  text-align: start;
+ }
+ /* Keyboard End */
+
+ /* Card */
+ .cards{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  padding-left: 34px;
+  gap: 69px;
+  margin-bottom: 142px;
+ }
+
+ .card{
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  max-width: 631px;
+ }
+
+ .cards h4{
+  text-align: start;
+ }
+}
+/* Tablet End */
